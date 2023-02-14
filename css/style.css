@@ -1,0 +1,248 @@
+body, ul { padding: 0; margin: 0; }
+
+body { 
+  background: #000;
+  color: #fff; 
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.meme img { width: 100%; height: auto; display:block; }
+
+
+ul { list-style: none; }
+
+h1  {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+h1 span, h3 span {
+  color: #e9ae00;
+}
+
+h2 { font-weight: 400; }
+
+h3 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.about_sec p { font-weight: 300; font-size: 20px; line-height: 1.6em; }
+
+.icon i { font-size:20px; color: #e9ae00; width:30px; text-align:center; }
+
+
+[data-serialscrolling-target]{ 
+  height:100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 20%;
+    position: fixed;
+    background: #242424;
+}
+
+
+.sidebar_inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar_inner li span {
+    padding: 10px 0;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.4s all ease 0s;
+    position: relative;
+}
+
+.sidebar_inner li span:hover {
+  color: #e9ae00;
+  transition: 0.4s all ease 0s;
+}
+
+.sidebar_inner li span::after {
+    content: '';
+    height: 2px;
+    background: #e9ae00;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all ease 0s;
+}
+
+.sidebar_inner li span:hover::after {
+  width: 100%;
+  transition: 0.3s all ease 0s;
+}
+
+.the_content {
+    width: 80%;
+    position: relative;
+    left: 20%;  
+}
+
+.animation_text del { text-decoration: none; }
+
+.intro {  display:flex; align-items:center; height: 80vh; }
+.container { max-width:1050px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+.intro > div { width: 50%; }
+
+.meme {
+    max-width: 540px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.meme::after {
+    position: absolute;
+    content: '';
+    height: 120px;
+    width: 6px;
+    background: #e9ae00;
+    left: -22px;
+    top: -22px;
+}
+
+.meme::before {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 120px;
+    background: #e9ae00;
+    left: -22px;
+    top: -22px;
+}
+
+
+.pic_wrapper::after {
+    position: absolute;
+    content: '';
+    height: 120px;
+    width: 6px;
+    background: #e9ae00;
+    right: -22px;
+    bottom: -22px;
+}
+
+.pic_wrapper::before {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 120px;
+    background: #e9ae00;
+    right: -22px;
+    bottom: -22px;
+}
+
+
+.meme_alt::after {
+    position: absolute;
+    content: '';
+    height: 120px;
+    width: 6px;
+    background: #e9ae00;
+    right: -22px;
+    top: -22px;
+}
+
+.meme_alt::before {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 120px;
+    background: #e9ae00;
+    right: -22px;
+    top: -22px;
+}
+
+
+.pic_wrapper_alt::after {
+    position: absolute;
+    content: '';
+    height: 120px;
+    width: 6px;
+    background: #e9ae00;
+    left: -22px;
+    bottom: -22px;
+}
+
+.pic_wrapper_alt::before {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 120px;
+    background: #e9ae00;
+    left: -22px;
+    bottom: -22px;
+}
+
+.work_sec {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work_col { width: 50%; padding: 30px; box-sizing: border-box;  }
+
+.work_sec img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 5px solid #e9ae00;
+}
+
+.work_col span {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 10px 0 0;
+}
+
+@media only screen and (max-width: 1366px){
+  .meme { max-width: 420px; }
+  .about_sec p { font-size: 18px; }
+  .work_sec { max-width: 800px; margin: 0 auto; }
+}
+
+@media only screen and (max-width: 1200px){
+  [data-serialscrolling-target] { height:auto; padding: 50px 20px; }
+}
+
+@media only screen and (max-width: 1024px){
+  .the_content { width: 100%; left: 0; }
+  .sidebar_inner { height: auto; }
+  .sidebar { width: 100%; z-index: 99; }
+  .sidebar_inner li { display: inline-block; margin: 0 4px; }
+  .sidebar_inner li span { padding: 6px 18px; }
+}
+
+
+@media only screen and (max-width: 800px){
+  .pic img { width: 100%; height: auto; }
+}
+
+@media only screen and (max-width: 767px){
+  .pic img { width: 100%; height: auto; }
+  .intro {  display: block; height: auto; }
+  .intro > div {  width: auto; }
+  .pic { max-width: 400px; margin: 40px auto 0; }
+  .work_col { width: 100%; }
+}
