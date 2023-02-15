@@ -101,9 +101,10 @@ h3 {
 
 .animation_text del { text-decoration: none; }
 
-.intro {  display:flex; align-items:center; height: 80vh; }
+.intro {  display:flex; align-items:center; height: 84vh; }
 .container { max-width:1050px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
 .intro > div { width: 50%; }
+.pic { text-align: center; }
 
 .meme {
     max-width: 540px;
