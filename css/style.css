@@ -208,6 +208,7 @@ h3 {
     height: auto;
     display: block;
     border: 5px solid #e9ae00;
+    box-sizing: border-box;
 }
 
 .work_col span {
